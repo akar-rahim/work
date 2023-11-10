@@ -1,0 +1,447 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('bg-body.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form {
+    width: 464px;
+    height: 626px;
+    border-radius: 32px;
+    border: 1px solid #606060;
+    background: linear-gradient(320deg, rgba(0, 0, 0, 0.40) 0%, rgba(52, 52, 52, 0.20) 100%);
+    backdrop-filter: blur(2.5px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    overflow: hidden;
+
+}
+
+#submitbtn {
+    cursor: pointer;
+    background: #1CBB9E;
+    width: 100%;
+    padding: 10px 14px;
+    color: white;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    display: block;
+    display: none;
+    border-radius: 5px;
+}
+
+#again {
+    background-color: #1CBB9E;
+    font-size: 14px;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+input,
+select {
+    outline: none;
+    background-color: #242327;
+    line-height: 22px;
+    padding: 10px 14px;
+    align-items: center;
+    align-self: stretch;
+    color: white;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+p {
+    color: white;
+    margin-bottom: 5px;
+}
+
+form .personal-info {
+    width: 100%;
+    padding: 5px;
+    border-radius: 6px;
+
+}
+
+.banner {
+
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+
+
+.item {
+
+    position: relative;
+    margin: 10px 0;
+}
+
+.btn-block {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn-block #continue-info-btn,
+#continue-faceid-btn {
+    cursor: pointer;
+    background: #1CBB9E;
+    width: 100%;
+    padding: 10px 14px;
+    color: white;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    display: block;
+    border-radius: 5px;
+
+}
+
+.btn-block a:hover {
+    color: green;
+}
+
+.banner .steps {
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+.banner .steps .circlenum {
+
+    width: 32px;
+    height: 58px;
+    position: relative;
+
+}
+.banner .steps .circlenum .circleshape-one{
+    width: 32px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: #454545;
+    border-radius: 9999px;
+    border: 2px #1CBA9E solid;
+}
+.banner .steps .circlenum .circleshape-two{
+    width: 32px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: #454545;
+    border-radius: 9999px;
+    border: 2px #737373 solid;
+}
+.banner .steps .circlenum .number{
+    left: 7.5px;
+    top: 7.5px;
+    position: absolute;
+    text-align: center;
+    color: #FCFCFB;
+    font-size: 13px;
+    font-family: Inter;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+.banner .steps .circlenum .numberone{
+    color: #1CBA9E ;
+}
+.banner .steps span {
+    width: 3px;
+    height: 3px;
+    background: #737373;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+.banner .steps .circlenum .txtone{
+
+left: -28px;
+    top: 42px;
+    position: absolute;
+    text-align: center;
+    color: #1CBA9E;
+    font-size: 13px;
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word;
+
+}
+.banner .steps .circlenum .txttwo{
+    left: -5.5px;
+    top: 42px;
+    position: absolute;
+    text-align: center;
+    color: #737373;
+    font-size: 13px;
+    font-family: Inter;
+    font-weight: 500;
+    word-wrap: break-word;
+    
+    }
+
+
+.banner .steps .circlesteps {
+    height: 32px;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+
+
+
+@media (min-width: 568px) {
+
+    .name-item,
+    .city-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .name-item input,
+    .city-item input {
+        width: calc(50% - 20px);
+    }
+
+    .city-item select {
+        width: calc(50% - 8px);
+    }
+}
+
+form .faceid {
+    width: 100%;
+    padding: 5px;
+    border-radius: 6px;
+    transform: translate(200%, -95%);
+    opacity: 0;
+    visibility: hidden;
+    margin-top: -25px;
+}
+
+form .faceid #face-shape {
+    position: relative;
+    width: 80%;
+    z-index: 100000;
+    height: 16rem;
+    display: block;
+    margin: auto;
+    width: 21rem;
+}
+
+.completedform img {
+
+    width: 50%;
+    object-fit: cover;
+}
+
+.completedform {
+    position: absolute;
+    object-fit: cover;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    display: none;
+    margin-top: 6rem;
+}
+
+.completedform p {
+    margin-top: 50px;
+
+}
+
+.completedform button {
+    cursor: pointer;
+    background: #1CBB9E;
+    width: 100%;
+    padding: 10px 14px;
+    color: white;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    display: block;
+    border-radius: 5px;
+    margin-top: 7rem;
+}
+
+@media screen and (max-width:600px) {
+    .form {
+        width: 70%;
+
+    }
+}
+
+#video {
+
+    width: 21rem;
+    height: 256px;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#canvas {
+    display: none;
+}
+
+.camera {
+    width: 340px;
+    display: inline-block;
+}
+
+.photo-output {
+    height: 340px;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+
+}
+
+.output {
+    width: 70%;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.output img {
+    width: 110%;
+    height: 256px;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#startbutton {
+    background-color: #1CBB9E;
+    font-size: 14px;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+.contentarea {
+    font-size: 16px;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    width: 760px;
+}
+
+@media screen and (max-width:460px) {
+
+    /* .banner .steps span {
+        width: 8px;
+        height: 8px;
+        margin: 0 6px;
+    }
+.steps img{
+    width: 1.5rem;
+    height: 1.5rem;
+} */
+    .top h1 {
+        font-size: 18px;
+    }
+
+    .form {
+        height: 475px;
+        top: 18rem;
+        width: 80%;
+    }
+
+    input,
+    select {
+        padding: 1px 8px;
+        font-size: 14px;
+    }
+
+    .btn-block #continue-info-btn,
+    #continue-faceid-btn,
+    #submitbtn {
+        padding: 5px 0;
+        font-size: 16px;
+    }
+
+    form .faceid #face-shape {
+        height: 10rem;
+        width: 13rem;
+
+    }
+
+    #video {
+        height: 10rem;
+        width: 13rem;
+        top: 84.5px;
+    }
+
+    .output img {
+        height: 10rem;
+        width: 13rem;
+        top: -0.6rem;
+    }
+
+    #again,
+    #startbutton {
+        font-size: 12px;
+        width: 45%;
+    }
+
+    .completedform button {
+        padding: 6px 0;
+        margin-top: 3rem;
+        cursor: pointer;
+        padding: 5px 0;
+        color: white;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        display: block;
+        border-radius: 5px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+    .banner .steps span {
+      
+        margin: 0 1.5px;
+    }
+}

@@ -1,0 +1,160 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="form">
+    <div class="top" >
+      <div class="banner">
+        <div class="steps" >
+          <div class="circlenum">
+            <div style="width: 32px; height: 32px; left: 0px; top: 0px; position: absolute">
+              <div style="left: 0px; top: 0px; position: absolute"></div>
+              <div style="width: 32px; height: 32px; left: 0px; top: 0px; position: absolute">
+                <div class="circleshape-one" ></div>
+                <div class="number numberone" >01</div>
+              </div>
+            </div>
+            <div class="txtone">personal info.</div>
+          </div>
+          <div class="circlesteps">
+            <span ></span>
+            <span ></span>
+            <span ></span>
+            <span ></span>
+            <span ></span>
+            <span ></span>
+            <span ></span>
+            <span ></span>
+            <span ></span>
+            <span ></span>
+            <span ></span>
+            <span ></span>
+            <span ></span>
+            <span ></span>
+            <span ></span>
+            <span ></span>
+            <span ></span>
+        
+          </div>
+          <div class="circlenum">
+            <div style="width: 32px; height: 32px; left: 0px; top: 0px; position: absolute">
+              <div style="left: 0px; top: 0px; position: absolute"></div>
+              <div style="width: 32px; height: 32px; left: 0px; top: 0px; position: absolute">
+                <div class="circleshape-two" ></div>
+                <div class="number numbertwo" >02</div>
+              </div>
+            </div>
+            <div class="txttwo">face id</div>
+          </div>
+        </div>
+      </div>
+
+      <h1 style="text-align: center; color: white;">Register</h1>
+    </div>
+    <form id="form-data">
+
+      <div class="personal-info" id="personal-info">
+        <div class="item">
+          <p>Name</p>
+          <input type="email" name="email" placeholder="yourname" />
+        </div>
+
+
+        <div class="item">
+          <select>
+            <option value="">choose a question One</option>
+            <option value="1">Adventure</option>
+
+          </select>
+        </div>
+
+        <div class="item">
+          <p>Answer question one</p>
+          <input type="text" name="destination" placeholder="your answer" />
+        </div>
+        <div class="item">
+          <select>
+            <option value="">choose a question two</option>
+            <option value="1">Adventure</option>
+
+          </select>
+        </div>
+        <div class="item">
+          <p>Answer question two</p>
+          <input type="text" name="destination" placeholder="your answer" />
+        </div>
+
+        <div class="btn-block">
+          <a id="continue-info-btn">continue</a>
+        </div>
+
+      </div>
+
+      <div class="faceid" id="faceid" >
+
+        <img id="face-shape" src="face shape 2.png" alt="">
+        <div style="display: flex;justify-content: space-around;align-items: center;">
+          <a id="startbutton">Take photo</a>
+          <a id="again">photo not clear</a>
+        </div>
+        <div class="btn-block" style="margin-top: 10px;">
+
+          <a id="continue-faceid-btn">OpenCamera</a>
+          <button name="data" type="button" id="submitbtn">submit</button>
+          <p style="margin-top: 20px;">do you have an account? <a href="index.html" style="color: #139553;">sign in</a>
+          </p>
+        </div>
+
+
+        <div class="camera">
+          <video id="video">Video stream not available.</video>
+        </div>
+
+        <canvas id="canvas"> </canvas>
+        <div class="output">
+          <img id="photo-output" alt="The screen capture will appear in this box." />
+        </div>
+
+
+
+
+      </div>
+
+      <div class="completedform" >
+
+        <img src="cong.img.png" alt="">
+
+        <p>Congratulations..<br>
+          your account has been created</p>
+          <button type="submit">continue to the site</button>
+
+      </div>
+
+    </form>
+
+  </div>
+
+
+
+
+
+</body>
+<script src="./programming.js"></script>
+<script src="./faceid.js"></script>
+
+
+
+
+</html>
